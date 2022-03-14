@@ -82,21 +82,7 @@ prompt_git(){
   fi
 }
 
-prompt_svn() {
-  if [[ -n $(in_svn) ]]; then
-    local rev branch display
-    prompt_vcs_type "svn"
 
-    rev=$(svn_get_rev_nr)
-    branch=$(svn_get_branch_name)
-    display="${rev}:${branch}"
-    if [[ $(svn_dirty_choose_pwd 1 0) -eq 1 ]]; then
-      prompt_vcs_branch true "$display"
-    else
-      prompt_vcs_branch false "$display"
-    fi
-  fi
-}
 
 prompt_userchar(){
   prompt_segment default false " %#"
