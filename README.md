@@ -1,4 +1,4 @@
-# endless-dog
+# Endless-dog, a zsh-theme that looks like grml
 oh-my-zsh theme
 Original link: [https://github.com/qwelyt/endless-dog](https://github.com/qwelyt/endless-dog)
 
