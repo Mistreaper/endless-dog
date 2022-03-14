@@ -1,15 +1,29 @@
 # endless-dog
 oh-my-zsh theme
+Original link: [https://github.com/qwelyt/endless-dog](https://github.com/qwelyt/endless-dog)
 
 ## What?
-I've been using grml-zsh-config since the day I started using zsh all those many years ago. 
-grml comes with a *great* config in my opinion. It does however have a serious problem: Speed.
+A fork from their theme. I modified it because there's an `svn` error, even if `svn` is installed. This is just a `zsh-theme` that looks like the `grml` theme.
 
-On some of my machines, it takes roughly 4 seconds to get a shell. Now, as all shell-users know, you use the shell because you want to get things done quickly. If I have to wait 4 seconds just to be able to do something, it's wrong.
-So I decided to try out oh-my-zsh. Going from grml, this is blazingly fast. I get a shell up in less than a second. But grml has such a nice theme. So I missed that. And what do you do when you miss it? Fork fork fork!
-This isn't really a fork though. It's more of a clone. I have blatantly copied the looks of the theme and put it into a OMZ-theme. Seems to work. Also did *very* minor changes. Like yellow when branch is dirty.
+## Dependencies:
+Of course you need `git` and `zsh`. Also you need `oh-my-zsh`
 
-[![asciicast](https://asciinema.org/a/9sp6me1x9sulph9broz4fo3za.png)](https://asciinema.org/api/asciicasts/9sp6me1x9sulph9broz4fo3za?speed=2&loop=1&autoplay=1)
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-## Plugins
-You'll need the `git` and `svn` plugins for this theme to be happy.
+## How to install?
+
+Run:
+```
+git clone https://github.com/Mistreaper/endless-dog
+```
+and of course move it:
+```
+cd endless-dog && mv endless-dog.zsh-theme ~/.oh-my-zsh/themes
+```
+and edit `~/.zshrc`:
+```
+ZSH_THEME="endless-dog"
+```
+
