@@ -26,4 +26,5 @@ and edit `~/.zshrc`:
 ```
 ZSH_THEME="endless-dog"
 ```
+The installation is user-wide, so you have to install `oh-my-zsh` and this theme again for other users. 
 
